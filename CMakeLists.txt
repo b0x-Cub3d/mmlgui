@@ -49,6 +49,7 @@ add_executable(mmlgui
 	src/window.cpp
 	src/main_window.cpp
 	src/editor_window.cpp
+	src/fm_patch_window.cpp
 	src/song_manager.cpp
 	src/track_info.cpp
 	src/track_view_window.cpp

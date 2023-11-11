@@ -16,11 +16,11 @@
 		1. file dialog doesn't automatically focus the filename.
 		2. file dialog has no keyboard controls at all :/
 */
-
 #include "main_window.h"
 #include "editor_window.h"
 #include "track_view_window.h"
 #include "track_list_window.h"
+#include "fm_patch_window.h"
 
 #include "dmf_importer.h"
 
@@ -170,6 +170,10 @@ void Editor_Window::display()
 			if (ImGui::MenuItem("Track list..."))
 			{
 				children.push_back(std::make_shared<Track_List_Window>(song_manager));
+			}
+			if (ImGui::MenuItem("FM Patch Editor..."))
+			{
+				children.push_back(std::make_shared<FM_Patch_Window>(song_manager));
 			}
 			ImGui::Separator();
 			if (ImGui::BeginMenu("Editor style"))

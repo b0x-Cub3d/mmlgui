@@ -52,6 +52,7 @@ MMLGUI_OBJS = \
 	$(OBJ)/window.o \
 	$(OBJ)/main_window.o \
 	$(OBJ)/editor_window.o \
+	$(OBJ)/fm_patch_window.o \
 	$(OBJ)/song_manager.o \
 	$(OBJ)/track_info.o \
 	$(OBJ)/track_view_window.o \
